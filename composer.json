@@ -1,9 +1,14 @@
 {
-    "name": "nazka/sermepa-omnipay",
+    "name": "rsenses/sermepa-omnipay",
     "type": "symfony-bundle",
     "description": "Sermepa (now Redsys) payment gateway implementation with omnipay",
     "license": "GPLv2",
     "authors": [
+        {
+            "name": "Rubén Silva",
+            "email": "me@rsilva.es",
+            "homepage": "http://github.com/rsenses"
+        },
         {
             "name": "Javier Sampedro",
             "email": "jsampedro77@gmail.com",
