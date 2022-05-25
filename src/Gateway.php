@@ -1,13 +1,13 @@
 <?php
 
-namespace Omnipay\Sermepa;
+namespace Omnipay\Redsys;
 
 use Symfony\Component\HttpFoundation\Request;
 use Omnipay\Common\AbstractGateway;
-use Omnipay\Sermepa\Message\CallbackResponse;
+use Omnipay\Redsys\Message\CallbackResponse;
 
 /**
- * Sermepa (Redsys) Gateway
+ * Redsys (Redsys) Gateway
  *
  * @author Javier Sampedro <jsampedro77@gmail.com>
  * @author NitsNets Studio <github@nitsnets.com>
@@ -128,7 +128,7 @@ class Gateway extends AbstractGateway
      */
     public function getName()
     {
-        return 'Sermepa';
+        return 'Redsys';
     }
 
     /**
@@ -137,7 +137,7 @@ class Gateway extends AbstractGateway
      */
     public function authorize(array $parameters = array())
     {
-        return $this->createRequest('\Omnipay\Sermepa\Message\AuthorizeRequest', $parameters);
+        return $this->createRequest('\Omnipay\Redsys\Message\AuthorizeRequest', $parameters);
     }
 
     /**
@@ -146,7 +146,7 @@ class Gateway extends AbstractGateway
      */
     public function completeAuthorize(array $parameters = array())
     {
-        return $this->createRequest('\Omnipay\Sermepa\Message\CompleteAuthorizeRequest', $parameters);
+        return $this->createRequest('\Omnipay\Redsys\Message\CompleteAuthorizeRequest', $parameters);
     }
 
     /**
@@ -156,9 +156,9 @@ class Gateway extends AbstractGateway
     public function purchase(array $parameters = array())
     {
         if (isset($parameters['recurrent']) && $parameters['recurrent']) {
-            return $this->createRequest('\Omnipay\Sermepa\Message\RecurrentPurchaseRequest', $parameters);
+            return $this->createRequest('\Omnipay\Redsys\Message\RecurrentPurchaseRequest', $parameters);
         } else {
-            return $this->createRequest('\Omnipay\Sermepa\Message\PurchaseRequest', $parameters);
+            return $this->createRequest('\Omnipay\Redsys\Message\PurchaseRequest', $parameters);
         }
     }
 
@@ -168,7 +168,7 @@ class Gateway extends AbstractGateway
      */
     public function completePurchase(array $parameters = array())
     {
-        return $this->createRequest('\Omnipay\Sermepa\Message\CompletePurchaseRequest', $parameters);
+        return $this->createRequest('\Omnipay\Redsys\Message\CompletePurchaseRequest', $parameters);
     }
 
     /**

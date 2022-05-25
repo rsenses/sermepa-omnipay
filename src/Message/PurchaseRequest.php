@@ -1,14 +1,14 @@
 <?php
 
-namespace Omnipay\Sermepa\Message;
+namespace Omnipay\Redsys\Message;
 
 use Omnipay\Common\Message\AbstractRequest;
-use Omnipay\Sermepa\Encryptor\Encryptor;
+use Omnipay\Redsys\Encryptor\Encryptor;
 use \Money\Currencies\ISOCurrencies;
 use \Money\Currency;
 
 /**
- * Sermepa (Redsys) Purchase Request
+ * Redsys (Redsys) Purchase Request
  *
  * @author Javier Sampedro <jsampedro77@gmail.com>
  * @author NitsNets Studio <github@nitsnets.com>

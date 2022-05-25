@@ -1,9 +1,9 @@
 <?php
 
-namespace Omnipay\Sermepa\Message;
+namespace Omnipay\Redsys\Message;
 
 /**
- * Sermepa (Redsys) Recurrent Purchase Request
+ * Redsys (Redsys) Recurrent Purchase Request
  *
  * @author Javier Sampedro <jsampedro77@gmail.com>
  */

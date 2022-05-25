@@ -1,13 +1,13 @@
 <?php
 
-namespace Omnipay\Sermepa\Message;
+namespace Omnipay\Redsys\Message;
 
 use Symfony\Component\HttpFoundation\Request;
-use Omnipay\Sermepa\Encryptor\Encryptor;
-use Omnipay\Sermepa\Exception\BadSignatureException;
+use Omnipay\Redsys\Encryptor\Encryptor;
+use Omnipay\Redsys\Exception\BadSignatureException;
 
 /**
- * Sermepa (Redsys) Complete Purchase Request
+ * Redsys (Redsys) Complete Purchase Request
  */
 class CompletePurchaseRequest extends PurchaseRequest
 {

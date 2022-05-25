@@ -1,9 +1,9 @@
 <?php
 
-namespace Omnipay\Sermepa\Message;
+namespace Omnipay\Redsys\Message;
 
 /**
- * Sermepa (Redsys) Complete Authorize Request
+ * Redsys (Redsys) Complete Authorize Request
  */
 class CompleteAuthorizeRequest extends CompletePurchaseRequest
 {

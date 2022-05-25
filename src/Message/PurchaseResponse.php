@@ -1,12 +1,12 @@
 <?php
 
-namespace Omnipay\Sermepa\Message;
+namespace Omnipay\Redsys\Message;
 
 use Omnipay\Common\Message\AbstractResponse;
 use Omnipay\Common\Message\RedirectResponseInterface;
 
 /**
- * Sermepa (Redsys) Purchase Response
+ * Redsys (Redsys) Purchase Response
  */
 class PurchaseResponse extends AbstractResponse implements RedirectResponseInterface
 {
